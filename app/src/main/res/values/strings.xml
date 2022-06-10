@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SquareApp</string>
+    <string name="logo">Choose the Figure</string>
+    <string name="logo_formula">Choose the formula for your figure</string>
+    <string name="logo_welcome">Welcome to the</string>
+    <string name="logo_text">Welcome! This app will help you to calculate square of figure you have chosen! Some of them need logging </string>
+    <string name="formula_triangle1">Доступные формулы:
+    1.через две стороны и угол между ними
+    2.через основание и высоту
+    3.через радиус описанной окружности и 3 стороны
+    4.через радиус вписанной окружности и 3 стороны
+    5.через сторону и два прилежащих угла
+    6.по формуле Герона</string>
+
+
+    <string name="line"> Hexagon \n <font color="#1E88E5">Log to use</font> </string>
+    <string name="back"> Back </string>
+    <string name="line_unlocked"> Hexagon </string>
+
+    <string name="result_view"></string>
+
+
+
+
+</resources>

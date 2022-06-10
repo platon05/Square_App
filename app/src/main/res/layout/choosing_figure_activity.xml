@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/MistyRose"
+    tools:context=".activities.MainActivity">
+
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="@string/logo"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/Blue600"
+        android:textSize="34sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="200dp"
+        android:layout_height="350dp"
+        android:layout_below="@+id/logo"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/white">
+
+
+        <RadioButton
+            android:id="@+id/radioButton_triangle"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:fontFamily="@font/andika"
+            android:gravity="center"
+            android:text="Triangle"
+            android:textSize="25sp"
+            android:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/radioButton_parallelogram"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:fontFamily="@font/andika"
+            android:text="Parallelogram"
+            android:textSize="25sp"
+            android:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/radioButton_square"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_alignEnd="@+id/radioButton_triangle"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/andika"
+            android:gravity="center"
+            android:text="Square"
+            android:textSize="25sp"
+            android:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/radioButton_rectangle"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_alignEnd="@+id/radioButton_square"
+            android:fontFamily="@font/andika"
+            android:gravity="center"
+            android:text="Rectangle"
+            android:textSize="25sp"
+            android:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/radioButton_hexagon"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_alignEnd="@+id/radioButton_rectangle"
+            android:clickable="false"
+            android:fontFamily="@font/andika"
+            android:gravity="center"
+            android:text="@string/line"
+            android:textColor="#8F8E8E"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonNextPage"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/logo"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="420dp"
+        android:background="@drawable/rectangle_rounded_all"
+        android:text="Next page" />
+
+    <TextView
+        android:id="@+id/textBack"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/andika"
+        android:text="  ❮ Back"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

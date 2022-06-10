@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/MistyRose"
+    tools:context=".formula_activities.FormulaTriangleActivity">
+
+    <TextView
+        android:id="@+id/logo_formula_triangle_rb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="@string/logo_formula"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/lightBlue"
+        android:textSize="24sp"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_triangle_rb"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp">
+
+        <RadioButton
+            android:id="@+id/radioButton_triangle_rb_storona"
+            android:layout_width="180dp"
+            android:layout_height="90dp"
+            android:fontFamily="@font/andika"
+            android:text="Площадь через основание и сторону"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/radioButton_triangle_rb_ugol"
+            android:layout_width="180dp"
+            android:layout_height="90dp"
+            android:fontFamily="@font/andika"
+            android:text="Площадь через основание и угол"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+
+        <RadioButton
+            android:id="@+id/radioButton_triangle_rb_visota"
+            android:layout_width="180dp"
+            android:layout_height="90dp"
+            android:layout_alignEnd="@+id/radioButton_triangle"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/andika"
+            android:text="Площадь через основание и высоту"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/radioButton_triangle_rb_ugol_mezhdu_bok"
+            android:layout_width="180dp"
+            android:layout_height="90dp"
+            android:layout_alignEnd="@+id/radioButton_triangle_rb"
+            android:fontFamily="@font/andika"
+            android:text="Площадь через боковые стороны и угол между ними"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/radioButton_triangle_rb_ugol_mezhdu_osn"
+            android:layout_width="180dp"
+            android:layout_height="90dp"
+            android:layout_alignEnd="@+id/radioButton_triangle_rb"
+            android:fontFamily="@font/andika"
+            android:text="Площадь через основание и угол между боковыми "
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/textView_triangle_rb_formula"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="125dp"
+        android:fontFamily="@font/andika"
+        android:text="S = a∙ a = a², где a - сторона"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button_back_triangle_rb"
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/logo_formula_triangle_rb"
+        android:layout_marginLeft="25dp"
+
+        android:layout_marginTop="500dp"
+        android:background="@drawable/rectangle_rounded_all"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/button_solve_triangle_rb"
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/logo_formula_triangle_rb"
+        android:layout_marginLeft="210dp"
+
+        android:layout_marginTop="500dp"
+        android:background="@drawable/rectangle_rounded_all"
+        android:text="Solve" />
+
+    <EditText
+        android:id="@+id/editText_triangle_rb_formula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_triangle_rb_formula"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:fontFamily="@font/andika"
+        android:hint="Введите значение"
+        android:inputType="number"
+        android:visibility="invisible"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editText_triangle_rb_formula2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_triangle_rb_formula"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="103dp"
+        android:ems="10"
+        android:fontFamily="@font/andika"
+        android:hint="Введите значение"
+        android:inputType="number"
+        android:visibility="invisible"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editText_triangle_rb_formula3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_triangle_rb_formula"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="171dp"
+        android:ems="10"
+        android:fontFamily="@font/andika"
+        android:hint="Введите значение"
+        android:inputType="number"
+        android:visibility="invisible"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView_triangle_rb_result"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="540dp"
+        android:fontFamily="@font/andika"
+        android:text="Ответ:"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/image_triangle_ravnobedr"
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="440dp" />
+
+
+
+</RelativeLayout>
